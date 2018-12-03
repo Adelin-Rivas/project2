@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+    
+    <script>
+	   function getdata(zipcode)
+            {
+                Request=new XMLHttpRequest()
+
+                Request.open("GET","http://api.openweathermap.org/data/2.5/forecast?zip=10458&appid=a8b567f8115b5288f6467d8708358ba4",true);
+                 Request.responseType = "document";
+                Request.send();
+                return Request.responseText
+                
+                
+             }
+      </script>
+
+</body>
+</html

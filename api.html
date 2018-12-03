@@ -1,0 +1,15 @@
+<html> 
+    <scrip>
+	   function getdata(zipcode)
+            {
+                Request= new XMLHttpRequest()
+
+                Request.open("GET","http://api.openweathermap.org/data/2.5/forecast?zip=${zipcode}&appid=a8b567f8115b5288f6467d8708358ba4",true);
+                 
+                this.Request.send();
+                this.codition=JSON.parse(this.Request.responseText());
+                console.log(this.codition)
+                
+             }
+      </scrip>
+<html>
